@@ -695,6 +695,55 @@ section:nth-child(even) {
 }
 
 /* ============================================================
+   EDUCATION
+   ============================================================ */
+.education-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  max-width: 640px;
+  transition: all .25s;
+}
+.education-card:hover {
+  border-color: var(--border-h);
+  box-shadow: var(--glow);
+}
+.edu-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.edu-info {
+  flex: 1;
+}
+.edu-info h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.edu-school {
+  font-family: var(--font-mono);
+  font-size: .85rem;
+  color: var(--blue);
+}
+.edu-year {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  background: rgba(0,180,255,.07);
+  border: 1px solid var(--border);
+  padding: 6px 16px;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+
+/* ============================================================
    CONTACT
    ============================================================ */
 #contact {
